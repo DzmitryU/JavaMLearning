@@ -1,7 +1,9 @@
-import net.sf.javaml.core.Dataset;
-import net.sf.javaml.tools.data.FileHandler;
+import domains.Person;
+import net.sf.javaml.core.Instance;
+import net.sf.javaml.core.SparseInstance;
 
 import java.io.*;
+import java.util.ArrayList;
 
 
 public class Main {
@@ -12,16 +14,32 @@ public class Main {
         String line = "";
         String cvsSplitBy = ",";
 
+        ArrayList<Person> list = new ArrayList<Person>();
+
         try {
 
             br = new BufferedReader(new FileReader(csvFile));
+            line = br.readLine();
             while ((line = br.readLine()) != null) {
-
-                // use comma as separator
                 String[] country = line.split(cvsSplitBy);
-
-                System.out.println(country[41]);
-
+                Integer classValue = 0;
+                if ("50000+".equals(country[41])) {
+                    classValue = 1;
+                }
+                Person person = new Person(classValue);
+                person.addAttribute(0, Double.parseDouble(country[0]));
+                person.addAttribute(1, Double.parseDouble(country[18]));
+                Double marrigeStatus = 0.0;
+                if (country[7].startsWith("Married")) {
+                    marrigeStatus = 1.0;
+                }
+                person.addAttribute(2, marrigeStatus);
+                Double employer = 1.0;
+                if ("0".equals(country[30])) {
+                    employer = 0.0;
+                }
+                person.addAttribute(3, marrigeStatus);
+                list.add(person);
             }
 
         } catch (FileNotFoundException e) {
@@ -38,8 +56,11 @@ public class Main {
             }
         }
 
-        System.out.println("Done");
+        for (Integer index = 0; index < list.size(); ++index) {
+            System.out.println(list.get(index).getInstance());
+        }
     }
+
         //Dataset data = FileHandler.loadDataset(new File("train.csv"), ",");
         //System.out.println(data);
 

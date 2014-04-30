@@ -1,3 +1,5 @@
+package domains;
+
 import net.sf.javaml.core.Instance;
 import net.sf.javaml.core.SparseInstance;
 
