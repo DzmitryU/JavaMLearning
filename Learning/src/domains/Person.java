@@ -20,8 +20,16 @@ public class Person {
         return instance;
     }
 
+    public Double getAttribute(Integer index) {
+        return attributes.get(index);
+    }
+
     public void addAttribute(Integer attributeIndex, Double attributeValue) {
         attributes.put(attributeIndex, attributeValue);
+    }
+
+    public Integer getClassValue() {
+        return classValue;
     }
 
     private Integer classValue;
