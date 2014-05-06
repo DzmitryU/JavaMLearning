@@ -1,15 +1,10 @@
 import domains.Person;
 import ml.Validator;
-import tests.ML_KNN_Test;
+import tests.ML_Standart_Test;
 import utils.PersonReader;
 
-import net.sf.javaml.core.Instance;
-import net.sf.javaml.core.SparseInstance;
-import net.sf.javaml.tools.data.FileHandler;
-import net.sf.javaml.classification.KNearestNeighbors;
 import net.sf.javaml.core.Dataset;
 import net.sf.javaml.core.DefaultDataset;
-import net.sf.javaml.classification.Classifier;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -31,10 +26,14 @@ public class Main {
         for (Integer index = list.size() - M; index < list.size(); ++index) {
             testDataSet.add(list.get(index).getInstance());
         }
+
+        System.out.println(list.get(1).getInstance());
+
         System.out.println(dataset.size());
         System.out.println(dataset);
         System.out.println(testDataSet);
-        ArrayList<Double> errorsList = ML_KNN_Test.getKNNErrors(10, dataset, testDataSet);
+        ArrayList<Double> errorsList = ML_Standart_Test.getKNNErrors(10, dataset, testDataSet);
         System.out.println(errorsList);
+        System.out.println(ML_Standart_Test.getKDTreeErrors(4, dataset, testDataSet));
     }
 }
