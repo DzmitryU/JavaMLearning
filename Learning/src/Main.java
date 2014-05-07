@@ -1,5 +1,6 @@
 import domains.Person;
 import ml.Validator;
+import net.sf.javaml.core.Instance;
 import tests.ML_Standart_Test;
 import utils.PersonReader;
 
@@ -28,12 +29,17 @@ public class Main {
         }
 
         System.out.println(list.get(1).getInstance());
-
-        System.out.println(dataset.size());
-        System.out.println(dataset);
-        System.out.println(testDataSet);
-        ArrayList<Double> errorsList = ML_Standart_Test.getKNNErrors(10, dataset, testDataSet);
-        System.out.println(errorsList);
-        System.out.println(ML_Standart_Test.getKDTreeErrors(4, dataset, testDataSet));
+        System.out.println(list.get(2).getInstance().keySet().equals(list.get(1).getInstance().keySet()));
+        Instance instance = list.get(1).getInstance();
+        System.out.println(instance.keySet());
+        for (Double value : instance) {
+            System.out.println(value);
+        }
+//        System.out.println(dataset.size());
+//        System.out.println(dataset);
+//        System.out.println(testDataSet);
+//        ArrayList<Double> errorsList = ML_Standart_Test.getKNNErrors(10, dataset, testDataSet);
+//        System.out.println(errorsList);
+//        System.out.println(ML_Standart_Test.getKDTreeErrors(4, dataset, testDataSet));
     }
 }

@@ -8,8 +8,8 @@ import java.util.Set;
 
 public class Person {
 
-    public Person(Integer initialClass) {
-        classValue = initialClass;
+    public Person(Integer classValue) {
+        this.classValue = classValue;
         attributes = new HashMap<Integer, Double>();
     }
 
