@@ -7,7 +7,7 @@
     <file path="/ML_KNN_Test.java" changelist="c8c10471-80a4-4833-ac73-b40d703bf95e" time="1399307748805" ignored="false" />
     <file path="/ML_Standart_Test.java" changelist="c8c10471-80a4-4833-ac73-b40d703bf95e" time="1399380159743" ignored="false" />
     <file path="/Main.java" changelist="c8c10471-80a4-4833-ac73-b40d703bf95e" time="1399475132468" ignored="false" />
-    <file path="/KNN.java" changelist="c8c10471-80a4-4833-ac73-b40d703bf95e" time="1399475047334" ignored="false" />
+    <file path="/KNN.java" changelist="c8c10471-80a4-4833-ac73-b40d703bf95e" time="1399479973933" ignored="false" />
     <file path="/ClassPair.java" changelist="c8c10471-80a4-4833-ac73-b40d703bf95e" time="1399474312448" ignored="false" />
     <file path="/ClassDistance.java" changelist="c8c10471-80a4-4833-ac73-b40d703bf95e" time="1399473729106" ignored="false" />
     <file path="/Person.java" changelist="c8c10471-80a4-4833-ac73-b40d703bf95e" time="1399473746361" ignored="false" />
@@ -82,23 +82,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InstanceProcessor.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/utils/InstanceProcessor.java">
+      <file leaf-file-name="ClassDistance.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/domains/ClassDistance.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="28" selection-start="434" selection-end="434" vertical-scroll-proportion="0.28506097">
+            <state line="16" column="5" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="KNN.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ML_Standart_Test.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tests/ML_Standart_Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="32" selection-start="1129" selection-end="1129" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KNN.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ml/KNN.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="12" selection-start="982" selection-end="982" vertical-scroll-proportion="0.0">
+            <state line="50" column="0" selection-start="1446" selection-end="1446" vertical-scroll-proportion="0.89634144">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#885#900#0" expanded="true" />
+                <element signature="e#917#932#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Person.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/domains/Person.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="40" selection-start="656" selection-end="656" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -121,9 +139,9 @@
         <option value="$PROJECT_DIR$/src/domains/ClassPair.java" />
         <option value="$PROJECT_DIR$/src/domains/Person.java" />
         <option value="$PROJECT_DIR$/src/domains/ClassDistance.java" />
-        <option value="$PROJECT_DIR$/src/ml/KNN.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/utils/InstanceProcessor.java" />
+        <option value="$PROJECT_DIR$/src/ml/KNN.java" />
       </list>
     </option>
   </component>
@@ -704,48 +722,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/domains/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="36" selection-start="245" selection-end="245" vertical-scroll-proportion="0.14149822">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/PersonReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.36385256">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/ML_Standart_Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="32" selection-start="1129" selection-end="1129" vertical-scroll-proportion="0.44470868">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ml/Validator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domains/ClassDistance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="5" selection-start="437" selection-end="437" vertical-scroll-proportion="0.41463414">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ml/KNN.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="12" selection-start="982" selection-end="982" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#885#900#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -756,10 +736,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/domains/ClassDistance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="5" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domains/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="40" selection-start="656" selection-end="656" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ml/Validator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="13" selection-start="50" selection-end="50" vertical-scroll-proportion="0.103658535">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/InstanceProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="28" selection-start="434" selection-end="434" vertical-scroll-proportion="0.28506097">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/ML_Standart_Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="32" selection-start="1129" selection-end="1129" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ml/KNN.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="0" selection-start="1446" selection-end="1446" vertical-scroll-proportion="0.89634144">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#917#932#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

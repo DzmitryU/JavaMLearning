@@ -3,6 +3,7 @@ package ml;
 import domains.ClassDistance;
 import domains.Person;
 import net.sf.javaml.core.Instance;
+import utils.InstanceProcessor;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -37,8 +38,15 @@ public class KNN {
 
         List<ClassDistance> list = new ArrayList<ClassDistance>();
         for (Person person: objectsList) {
-            Double distance = 0.0;
+            Double distance = InstanceProcessor.getDistance(person.getInstance(), instance);
+            list.add(new ClassDistance(distance, person.getClassValue()));
+        }
 
+        Collections.sort(list);
+        Integer maxRealNeighboursNumber = Math.min(list.size(), neighboursNumber);
+        Integer classSum = 0;
+        for (Integer index = 0; index < maxRealNeighboursNumber; ++index) {
+            classSum += list.get(index).getClassValue();
         }
 
         return 1;
