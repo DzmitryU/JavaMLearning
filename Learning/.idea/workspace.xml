@@ -6,12 +6,14 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/ML_KNN_Test.java" changelist="c8c10471-80a4-4833-ac73-b40d703bf95e" time="1399307748805" ignored="false" />
     <file path="/ML_Standart_Test.java" changelist="c8c10471-80a4-4833-ac73-b40d703bf95e" time="1399380159743" ignored="false" />
-    <file path="/Main.java" changelist="c8c10471-80a4-4833-ac73-b40d703bf95e" time="1399475132468" ignored="false" />
-    <file path="/KNN.java" changelist="c8c10471-80a4-4833-ac73-b40d703bf95e" time="1399479973933" ignored="false" />
+    <file path="/Main.java" changelist="c8c10471-80a4-4833-ac73-b40d703bf95e" time="1399550334615" ignored="false" />
+    <file path="/KNN.java" changelist="c8c10471-80a4-4833-ac73-b40d703bf95e" time="1399543984912" ignored="false" />
     <file path="/ClassPair.java" changelist="c8c10471-80a4-4833-ac73-b40d703bf95e" time="1399474312448" ignored="false" />
     <file path="/ClassDistance.java" changelist="c8c10471-80a4-4833-ac73-b40d703bf95e" time="1399473729106" ignored="false" />
     <file path="/Person.java" changelist="c8c10471-80a4-4833-ac73-b40d703bf95e" time="1399473746361" ignored="false" />
     <file path="/InstanceProcessor.java" changelist="c8c10471-80a4-4833-ac73-b40d703bf95e" time="1399479068944" ignored="false" />
+    <file path="/Validator.java" changelist="c8c10471-80a4-4833-ac73-b40d703bf95e" time="1399550364968" ignored="false" />
+    <file path="/fragment.java" changelist="c8c10471-80a4-4833-ac73-b40d703bf95e" time="1399549790775" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,10 +75,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="50" selection-start="947" selection-end="958" vertical-scroll-proportion="0.0">
+            <state line="51" column="0" selection-start="1680" selection-end="1680" vertical-scroll-proportion="0.8993174">
               <folding />
             </state>
           </provider>
@@ -94,19 +96,30 @@
       <file leaf-file-name="ML_Standart_Test.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tests/ML_Standart_Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="32" selection-start="1129" selection-end="1129" vertical-scroll-proportion="0.0">
+            <state line="25" column="71" selection-start="928" selection-end="928" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="KNN.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ml/KNN.java">
+      <file leaf-file-name="Validator.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ml/Validator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="0" selection-start="1446" selection-end="1446" vertical-scroll-proportion="0.89634144">
+            <state line="21" column="34" selection-start="609" selection-end="609" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#917#932#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KNN.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ml/KNN.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="28" selection-start="494" selection-end="494" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1106#1121#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -133,24 +146,23 @@
       <list>
         <option value="$PROJECT_DIR$/src/Person.java" />
         <option value="$PROJECT_DIR$/src/utils/PersonReader.java" />
-        <option value="$PROJECT_DIR$/src/ml/Validator.java" />
         <option value="$PROJECT_DIR$/src/tests/ML_KNN_Test.java" />
         <option value="$PROJECT_DIR$/src/tests/ML_Standart_Test.java" />
         <option value="$PROJECT_DIR$/src/domains/ClassPair.java" />
         <option value="$PROJECT_DIR$/src/domains/Person.java" />
         <option value="$PROJECT_DIR$/src/domains/ClassDistance.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/utils/InstanceProcessor.java" />
         <option value="$PROJECT_DIR$/src/ml/KNN.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/ml/Validator.java" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1696" />
-    <option name="height" value="1026" />
+    <option name="x" value="654" />
+    <option name="width" value="938" />
+    <option name="height" value="980" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -557,7 +569,7 @@
     <option name="totallyTimeSpent" value="16479000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <frame x="654" y="0" width="938" height="980" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -565,9 +577,9 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39907727" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39829478" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Kotlin" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39285713" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936978" sideWeight="0.500813" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -581,8 +593,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24785802" sideWeight="0.78662056" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21337947" sideWeight="0.49349594" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30136988" sideWeight="0.7868453" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21315469" sideWeight="0.49349594" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -666,13 +678,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/domains/Person.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -729,30 +734,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="50" selection-start="947" selection-end="958" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/domains/ClassDistance.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="5" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domains/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="40" selection-start="656" selection-end="656" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ml/Validator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="13" selection-start="50" selection-end="50" vertical-scroll-proportion="0.103658535">
           <folding />
         </state>
       </provider>
@@ -764,20 +748,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/ML_Standart_Test.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.6.0_29/src.zip!/java/lang/Math.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="32" selection-start="1129" selection-end="1129" vertical-scroll-proportion="0.0">
+        <state line="99" column="104" selection-start="4279" selection-end="4279" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#59586#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domains/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="40" selection-start="656" selection-end="656" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ml/KNN.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="0" selection-start="1446" selection-end="1446" vertical-scroll-proportion="0.89634144">
+        <state line="18" column="28" selection-start="494" selection-end="494" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#917#932#0" expanded="true" />
+            <element signature="e#1106#1121#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/ML_Standart_Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="71" selection-start="928" selection-end="928" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ml/Validator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="34" selection-start="609" selection-end="609" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="0" selection-start="1680" selection-end="1680" vertical-scroll-proportion="0.8993174">
+          <folding />
         </state>
       </provider>
     </entry>

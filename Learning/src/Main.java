@@ -19,22 +19,43 @@ public class Main {
         Dataset dataset = new DefaultDataset();
         Dataset testDataSet = new DefaultDataset();
         Integer M = 500;
+        Integer goodPersons = 0;
+        Integer goodInstances = 0;
+        Integer lastBad = 0;
         for (Integer index = 0; index < list.size() - M; ++index) {
             if (!Validator.isNoize(list.get(index))) {
                 dataset.add(list.get(index).getInstance());
+                ++goodPersons;
+            } else {
+                lastBad = index;
             }
+            if (!Validator.isNoize(list.get(index).getInstance())) {
+                ++goodInstances;
+            }
+
         }
         for (Integer index = list.size() - M; index < list.size(); ++index) {
             testDataSet.add(list.get(index).getInstance());
         }
 
-        System.out.println(list.get(1).getInstance());
-        System.out.println(list.get(2).getInstance().keySet().equals(list.get(1).getInstance().keySet()));
-        Instance instance = list.get(1).getInstance();
-        System.out.println(instance.keySet());
-        for (Double value : instance) {
-            System.out.println(value);
-        }
+        Instance instance = list.get(lastBad).getInstance();
+        Object temp = list.get(lastBad).getInstance().classValue();
+         Validator.isNoize(instance);
+
+        System.out.println(list.get(lastBad).getInstance());
+        System.out.println(list.get(lastBad).getInstance().classValue());
+        System.out.println(list.get(lastBad).getInstance().classValue().equals(0));
+        System.out.println(goodPersons);
+        System.out.println(goodInstances);
+
+
+//        System.out.println(list.get(1).getInstance());
+//        System.out.println(list.get(2).getInstance().keySet().equals(list.get(1).getInstance().keySet()));
+//        Instance instance = list.get(1).getInstance();
+//        System.out.println(instance.keySet());
+//        for (Double value : instance) {
+//            System.out.println(value);
+//        }
 //        System.out.println(dataset.size());
 //        System.out.println(dataset);
 //        System.out.println(testDataSet);

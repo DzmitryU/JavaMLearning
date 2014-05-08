@@ -2,15 +2,14 @@ package ml;
 
 import domains.ClassDistance;
 import domains.Person;
+import net.sf.javaml.classification.Classifier;
+import net.sf.javaml.core.Dataset;
 import net.sf.javaml.core.Instance;
 import utils.InstanceProcessor;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
-public class KNN {
+public class KNN implements Classifier {
     public KNN(Integer neighboursNumber) {
         this.neighboursNumber = neighboursNumber;
         objectsList = new ArrayList<Person>();
@@ -28,7 +27,13 @@ public class KNN {
         }
     }
 
-    public Integer predict(Instance instance) {
+    @Override
+    public void buildClassifier(Dataset instances) {
+        //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    @Override
+    public Object classify(Instance instance) {
         if (instance.get(0) <= 18) {
             return 0;
         }
@@ -49,9 +54,16 @@ public class KNN {
             classSum += list.get(index).getClassValue();
         }
 
-        return 1;
+        return Math.round(classSum / maxRealNeighboursNumber.doubleValue());
+    }
+
+    @Override
+    public Map<Object, Double> classDistribution(Instance instance) {
+        return null;
     }
 
     private List<Person> objectsList;
+    private Dataset objectDataset;
     private Integer neighboursNumber;
+
 }
