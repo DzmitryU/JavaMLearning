@@ -1,5 +1,6 @@
 package tests;
 
+import ml.KNN;
 import net.sf.javaml.classification.Classifier;
 import net.sf.javaml.classification.KDtreeKNN;
 import net.sf.javaml.classification.KNearestNeighbors;
@@ -9,7 +10,7 @@ import net.sf.javaml.core.Dataset;
 
 import java.util.ArrayList;
 
-public class ML_Standart_Test {
+public class ML_Test {
 
     private static Double getError(Classifier classifier, Dataset testDataSet) {
         Integer correct = 0, wrong = 0;
@@ -17,15 +18,20 @@ public class ML_Standart_Test {
             Instance instance = testDataSet.get(index);
             Object predictedClassValue = classifier.classify(instance);
             Object realClassValue = instance.classValue();
+            //System.out.println(realClassValue + " : " + predictedClassValue);
             if (predictedClassValue.equals(realClassValue))
                 correct++;
-            else
+            else {
                 wrong++;
+//                System.out.println(realClassValue + " : " + predictedClassValue);
+//                System.out.println(predictedClassValue.equals(realClassValue));
+            }
         }
+//        System.out.println(wrong + " : " + testDataSet.size());
         return (100.0 * wrong) / (double) (testDataSet.size());
     }
 
-    public static ArrayList<Double> getKNNErrors(Integer maxN, Dataset dataset, Dataset testDataSet) {
+    public static ArrayList<Double> getStandardKNNErrors(Integer maxN, Dataset dataset, Dataset testDataSet) {
         ArrayList<Double> resultList = new ArrayList<Double>();
         for (Integer neighborsNumber = 1; neighborsNumber <= maxN; ++neighborsNumber) {
             Classifier knn = new KNearestNeighbors(neighborsNumber);
@@ -36,7 +42,18 @@ public class ML_Standart_Test {
         return  resultList;
     }
 
-    public static Double getKDTreeErrors(Integer  dimensionNumber, Dataset dataset, Dataset testDataSet) {
+    public static ArrayList<Double> getKNNErrors(Integer maxN, Dataset dataset, Dataset testDataSet) {
+        ArrayList<Double> resultList = new ArrayList<Double>();
+        for (Integer neighborsNumber = 1; neighborsNumber <= maxN; ++neighborsNumber) {
+            Classifier knn = new KNN(neighborsNumber);
+            knn.buildClassifier(dataset);
+
+            resultList.add(getError(knn, testDataSet));
+        }
+        return  resultList;
+    }
+
+    public static Double getStandardKDTreeErrors(Integer dimensionNumber, Dataset dataset, Dataset testDataSet) {
         Classifier kdTree = new KDtreeKNN(dimensionNumber);
         kdTree.buildClassifier(dataset);
 

@@ -12,28 +12,15 @@ import java.util.*;
 public class KNN implements Classifier {
     public KNN(Integer neighboursNumber) {
         this.neighboursNumber = neighboursNumber;
-        objectsList = new ArrayList<Person>();
-    }
-
-    public void learn(Person person) {
-        if (!Validator.isNoize(person)) {
-            objectsList.add(person);
-        }
-    }
-
-    public void learn(ArrayList<Person> persons) {
-        for (Person person: persons) {
-            learn(person);
-        }
     }
 
     @Override
     public void buildClassifier(Dataset instances) {
-        //To change body of implemented methods use File | Settings | File Templates.
+        this.objectDataset = instances;
     }
 
     @Override
-    public Object classify(Instance instance) {
+    public Integer classify(Instance instance) {
         if (instance.get(0) <= 18) {
             return 0;
         }
@@ -42,19 +29,20 @@ public class KNN implements Classifier {
         }
 
         List<ClassDistance> list = new ArrayList<ClassDistance>();
-        for (Person person: objectsList) {
-            Double distance = InstanceProcessor.getDistance(person.getInstance(), instance);
-            list.add(new ClassDistance(distance, person.getClassValue()));
+        for (Instance baseInstance: objectDataset) {
+            Double distance = InstanceProcessor.getDistance(baseInstance, instance);
+            list.add(new ClassDistance(distance, baseInstance.classValue()));
         }
 
         Collections.sort(list);
         Integer maxRealNeighboursNumber = Math.min(list.size(), neighboursNumber);
         Integer classSum = 0;
         for (Integer index = 0; index < maxRealNeighboursNumber; ++index) {
-            classSum += list.get(index).getClassValue();
+            classSum += (Integer)list.get(index).getClassValue();
         }
 
-        return Math.round(classSum / maxRealNeighboursNumber.doubleValue());
+        //System.out.println(classSum / maxRealNeighboursNumber.doubleValue());
+        return ((Long)Math.round(classSum / maxRealNeighboursNumber.doubleValue())).intValue();
     }
 
     @Override
@@ -62,7 +50,6 @@ public class KNN implements Classifier {
         return null;
     }
 
-    private List<Person> objectsList;
     private Dataset objectDataset;
     private Integer neighboursNumber;
 

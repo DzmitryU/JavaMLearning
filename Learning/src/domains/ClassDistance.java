@@ -2,7 +2,7 @@ package domains;
 
 public class ClassDistance implements Comparable<ClassDistance> {
 
-    public ClassDistance(Double distance, Integer classValue) {
+    public ClassDistance(Double distance, Object classValue) {
         this.distance = distance;
         this.classValue = classValue;
     }
@@ -12,7 +12,7 @@ public class ClassDistance implements Comparable<ClassDistance> {
         return distance < o.distance ? -1 : distance > o.distance ? 1 : 0;
     }
 
-    public Integer getClassValue() {
+    public Object getClassValue() {
         return classValue;
     }
 
@@ -21,5 +21,5 @@ public class ClassDistance implements Comparable<ClassDistance> {
     }
 
     private Double distance;
-    private Integer classValue;
+    private Object classValue;
 }
