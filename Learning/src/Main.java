@@ -1,7 +1,8 @@
 import domains.Person;
+import ml.DTree;
 import ml.Validator;
 import net.sf.javaml.core.Instance;
-import tests.ML_Test;
+import utils.DatasetProcessor;
 import utils.PersonReader;
 
 import net.sf.javaml.core.Dataset;
@@ -29,10 +30,19 @@ public class Main {
             testDataSet.add(list.get(index).getInstance());
         }
 
-        ArrayList<Double> errorsList = ML_Test.getStandardKNNErrors(10, dataset, testDataSet);
-        System.out.println(errorsList);
-        errorsList = ML_Test.getKNNErrors(10, dataset, testDataSet);
-        System.out.println(errorsList);
-        System.out.println(ML_Test.getStandardKDTreeErrors(4, dataset, testDataSet));
+//        ArrayList<Double> errorsList = ML_Test.getStandardKNNErrors(10, dataset, testDataSet);
+//        System.out.println(errorsList);
+//        errorsList = ML_Test.getKNNErrors(10, dataset, testDataSet);
+//        System.out.println(errorsList);
+//        System.out.println(ML_Test.getStandardKDTreeErrors(4, dataset, testDataSet));
+
+        DTree dTree = new DTree();
+//        for (Instance instance: dataset) {
+//            System.out.println(instance.get(2));
+//        }
+        dTree.buildClassifier(dataset);
+        //System.out.println(DatasetProcessor.getMedian(dataset, 3));
+        //System.out.println((Math.log(0) / Math.log(2)));
+
     }
 }

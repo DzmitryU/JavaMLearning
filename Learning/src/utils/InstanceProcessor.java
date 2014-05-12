@@ -3,7 +3,7 @@ package utils;
 import net.sf.javaml.core.Instance;
 
 public class InstanceProcessor {
-    public static Double getDistance(Instance instance1, Instance instance2) {
+    public static Double calculateDistance(Instance instance1, Instance instance2) {
         if (instance1.keySet().equals(instance2.keySet())) {
             Double distance = 0.0;
             for (Integer key: instance1.keySet()) {

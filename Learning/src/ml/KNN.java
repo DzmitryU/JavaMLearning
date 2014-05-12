@@ -1,7 +1,6 @@
 package ml;
 
 import domains.ClassDistance;
-import domains.Person;
 import net.sf.javaml.classification.Classifier;
 import net.sf.javaml.core.Dataset;
 import net.sf.javaml.core.Instance;
@@ -30,7 +29,7 @@ public class KNN implements Classifier {
 
         List<ClassDistance> list = new ArrayList<ClassDistance>();
         for (Instance baseInstance: objectDataset) {
-            Double distance = InstanceProcessor.getDistance(baseInstance, instance);
+            Double distance = InstanceProcessor.calculateDistance(baseInstance, instance);
             list.add(new ClassDistance(distance, baseInstance.classValue()));
         }
 
@@ -41,7 +40,6 @@ public class KNN implements Classifier {
             classSum += (Integer)list.get(index).getClassValue();
         }
 
-        //System.out.println(classSum / maxRealNeighboursNumber.doubleValue());
         return ((Long)Math.round(classSum / maxRealNeighboursNumber.doubleValue())).intValue();
     }
 

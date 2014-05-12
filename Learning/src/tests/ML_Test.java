@@ -18,16 +18,12 @@ public class ML_Test {
             Instance instance = testDataSet.get(index);
             Object predictedClassValue = classifier.classify(instance);
             Object realClassValue = instance.classValue();
-            //System.out.println(realClassValue + " : " + predictedClassValue);
             if (predictedClassValue.equals(realClassValue))
                 correct++;
             else {
                 wrong++;
-//                System.out.println(realClassValue + " : " + predictedClassValue);
-//                System.out.println(predictedClassValue.equals(realClassValue));
             }
         }
-//        System.out.println(wrong + " : " + testDataSet.size());
         return (100.0 * wrong) / (double) (testDataSet.size());
     }
 
