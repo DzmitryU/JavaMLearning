@@ -50,14 +50,11 @@ public class ML_Test {
         return  resultList;
     }
 
-    public static ArrayList<Double> getDTreeErrors(Dataset dataset, Dataset testDataSet) {
-        ArrayList<Double> resultList = new ArrayList<Double>();
+    public static Double getDTreeErrors(Dataset dataset, Dataset testDataSet) {
 
         Classifier dTree = new DTree();
         dTree.buildClassifier(dataset);
-        resultList.add(getError(dTree, testDataSet));
-
-        return  resultList;
+         return getError(dTree, testDataSet);
     }
 
     public static Double getStandardKDTreeErrors(Integer dimensionNumber, Dataset dataset, Dataset testDataSet) {

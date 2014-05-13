@@ -6,7 +6,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/ML_KNN_Test.java" changelist="c8c10471-80a4-4833-ac73-b40d703bf95e" time="1399307748805" ignored="false" />
     <file path="/ML_Standart_Test.java" changelist="c8c10471-80a4-4833-ac73-b40d703bf95e" time="1399380159743" ignored="false" />
-    <file path="/Main.java" changelist="c8c10471-80a4-4833-ac73-b40d703bf95e" time="1399975900268" ignored="false" />
+    <file path="/Main.java" changelist="c8c10471-80a4-4833-ac73-b40d703bf95e" time="1399983932202" ignored="false" />
     <file path="/KNN.java" changelist="c8c10471-80a4-4833-ac73-b40d703bf95e" time="1399559010163" ignored="false" />
     <file path="/ClassPair.java" changelist="c8c10471-80a4-4833-ac73-b40d703bf95e" time="1399474312448" ignored="false" />
     <file path="/ClassDistance.java" changelist="c8c10471-80a4-4833-ac73-b40d703bf95e" time="1399551388021" ignored="false" />
@@ -14,10 +14,11 @@
     <file path="/InstanceProcessor.java" changelist="c8c10471-80a4-4833-ac73-b40d703bf95e" time="1399479068944" ignored="false" />
     <file path="/Validator.java" changelist="c8c10471-80a4-4833-ac73-b40d703bf95e" time="1399550364968" ignored="false" />
     <file path="/fragment.java" changelist="c8c10471-80a4-4833-ac73-b40d703bf95e" time="1399549790775" ignored="false" />
-    <file path="/ML_Test.java" changelist="c8c10471-80a4-4833-ac73-b40d703bf95e" time="1399975813827" ignored="false" />
-    <file path="/DatasetProcessor.java" changelist="c8c10471-80a4-4833-ac73-b40d703bf95e" time="1399908341963" ignored="false" />
+    <file path="/ML_Test.java" changelist="c8c10471-80a4-4833-ac73-b40d703bf95e" time="1399982534736" ignored="false" />
+    <file path="/DatasetProcessor.java" changelist="c8c10471-80a4-4833-ac73-b40d703bf95e" time="1399983878991" ignored="false" />
     <file path="/Node.java" changelist="c8c10471-80a4-4833-ac73-b40d703bf95e" time="1399900955104" ignored="false" />
     <file path="/DTree.java" changelist="c8c10471-80a4-4833-ac73-b40d703bf95e" time="1399978730363" ignored="false" />
+    <file path="/ConstantHolder.java" changelist="c8c10471-80a4-4833-ac73-b40d703bf95e" time="1399983464287" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,21 +71,6 @@
       </breakpoint>
     </breakpoint_any>
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/tests/ML_Test.java" line="16" class="tests.ML_Test" package="tests">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
       <breakpoint url="file://$PROJECT_DIR$/src/ml/DTree.java" line="32" class="ml.DTree" package="ml">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
@@ -110,10 +96,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="70" selection-start="1435" selection-end="1435" vertical-scroll-proportion="0.0">
+            <state line="31" column="86" selection-start="1108" selection-end="1108" vertical-scroll-proportion="0.38636363">
               <folding />
             </state>
           </provider>
@@ -122,7 +108,7 @@
       <file leaf-file-name="ML_Test.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tests/ML_Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="684" selection-end="684" vertical-scroll-proportion="0.0">
+            <state line="44" column="21" selection-start="1721" selection-end="1721" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -131,13 +117,13 @@
       <file leaf-file-name="DatasetProcessor.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/utils/DatasetProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="35" selection-start="2277" selection-end="2277" vertical-scroll-proportion="0.0">
+            <state line="94" column="40" selection-start="3050" selection-end="3050" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1480#1488#0" expanded="true" />
-                <element signature="e#2146#2155#0" expanded="true" />
-                <element signature="e#2401#2410#0" expanded="true" />
-                <element signature="e#2707#2725#0" expanded="true" />
+                <element signature="e#1566#1574#0" expanded="true" />
+                <element signature="e#2232#2241#0" expanded="true" />
+                <element signature="e#2487#2496#0" expanded="true" />
+                <element signature="e#3743#3761#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -154,10 +140,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DTree.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="DTree.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ml/DTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="0" selection-start="2811" selection-end="2811" vertical-scroll-proportion="0.725">
+            <state line="81" column="68" selection-start="2635" selection-end="2635" vertical-scroll-proportion="12.52">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -195,10 +181,11 @@
         <option value="$PROJECT_DIR$/src/ml/KNN.java" />
         <option value="$PROJECT_DIR$/src/utils/InstanceProcessor.java" />
         <option value="$PROJECT_DIR$/src/ml/Node.java" />
-        <option value="$PROJECT_DIR$/src/utils/DatasetProcessor.java" />
-        <option value="$PROJECT_DIR$/src/tests/ML_Test.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/ml/DTree.java" />
+        <option value="$PROJECT_DIR$/src/tests/ML_Test.java" />
+        <option value="$PROJECT_DIR$/src/utils/ConstantHolder.java" />
+        <option value="$PROJECT_DIR$/src/utils/DatasetProcessor.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
@@ -638,8 +625,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1615667" sideWeight="0.6585928" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34140715" sideWeight="0.49349594" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1615667" sideWeight="0.5882353" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4117647" sideWeight="0.49349594" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -723,13 +710,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/PersonReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.36385256">
@@ -809,39 +789,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/DatasetProcessor.java">
+    <entry file="file://$PROJECT_DIR$/src/ml/DTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="35" selection-start="2277" selection-end="2277" vertical-scroll-proportion="0.0">
+        <state line="81" column="68" selection-start="2635" selection-end="2635" vertical-scroll-proportion="12.52">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1480#1488#0" expanded="true" />
-            <element signature="e#2146#2155#0" expanded="true" />
-            <element signature="e#2401#2410#0" expanded="true" />
-            <element signature="e#2707#2725#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tests/ML_Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="684" selection-end="684" vertical-scroll-proportion="0.0">
+        <state line="44" column="21" selection-start="1721" selection-end="1721" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/ConstantHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="23" selection-start="69" selection-end="69" vertical-scroll-proportion="0.1053719">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/DatasetProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="40" selection-start="3050" selection-end="3050" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1566#1574#0" expanded="true" />
+            <element signature="e#2232#2241#0" expanded="true" />
+            <element signature="e#2487#2496#0" expanded="true" />
+            <element signature="e#3743#3761#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="70" selection-start="1435" selection-end="1435" vertical-scroll-proportion="0.0">
+        <state line="31" column="86" selection-start="1108" selection-end="1108" vertical-scroll-proportion="0.38636363">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ml/DTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="0" selection-start="2811" selection-end="2811" vertical-scroll-proportion="0.725">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

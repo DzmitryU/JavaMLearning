@@ -1,6 +1,9 @@
 package utils;
 
+import domains.Person;
+import ml.Validator;
 import net.sf.javaml.core.Dataset;
+import net.sf.javaml.core.DefaultDataset;
 import net.sf.javaml.core.Instance;
 
 import java.util.ArrayList;
@@ -77,6 +80,32 @@ public class DatasetProcessor {
         }
 
         return list;
+    }
+
+    public static Dataset ParsePersonList( ArrayList<Person> list) {
+        Dataset dataset = new DefaultDataset();
+        for (Integer index = 0; index < list.size(); ++index) {
+            if (!Validator.isNoize(list.get(index))) {
+                dataset.add(list.get(index).getInstance());
+            }
+        }
+        return dataset;
+    }
+
+    public static Dataset getLearningDataset(Dataset instances, Integer size) {
+        Dataset dataset = new DefaultDataset();
+        for (Integer index = 0; index < instances.size() - size; ++index) {
+                dataset.add(instances.get(index));
+        }
+        return dataset;
+    }
+
+    public static Dataset getTestDataset(Dataset instances, Integer size) {
+        Dataset dataset = new DefaultDataset();
+        for (Integer index = instances.size() - size; index < instances.size(); ++index) {
+            dataset.add(instances.get(index));
+        }
+        return dataset;
     }
 
     private static HashMap<Integer, Integer> getClassmap(Dataset instances) {
