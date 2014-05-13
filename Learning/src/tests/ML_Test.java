@@ -1,5 +1,6 @@
 package tests;
 
+import ml.DTree;
 import ml.KNN;
 import net.sf.javaml.classification.Classifier;
 import net.sf.javaml.classification.KDtreeKNN;
@@ -46,6 +47,16 @@ public class ML_Test {
 
             resultList.add(getError(knn, testDataSet));
         }
+        return  resultList;
+    }
+
+    public static ArrayList<Double> getDTreeErrors(Dataset dataset, Dataset testDataSet) {
+        ArrayList<Double> resultList = new ArrayList<Double>();
+
+        Classifier dTree = new DTree();
+        dTree.buildClassifier(dataset);
+        resultList.add(getError(dTree, testDataSet));
+
         return  resultList;
     }
 

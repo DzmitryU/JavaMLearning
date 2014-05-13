@@ -21,7 +21,7 @@ public class DTree implements Classifier {
 
     @Override
     public Object classify(Instance instance) {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        return classify(instance, root);
     }
 
     @Override
@@ -33,12 +33,14 @@ public class DTree implements Classifier {
         if (node.leaf) {
             return node.classValue;
         }
-        return node.classValue;
+        if (instance.get(node.index) <= node.value) {
+            return classify(instance, node.left);
+        } else {
+            return classify(instance, node.right);
+        }
     }
 
     private Node createNode(Dataset instances, Integer prevClass) {
-        System.out.println("***********************************");
-        //System.out.println(instances.size());
         Node node = new Node();
         Node workNode = new Node();
         if (instances.size() == 0) {
@@ -57,7 +59,6 @@ public class DTree implements Classifier {
         Double minGain = null;
         Integer minIndex = 0;
         for (Integer index: DatasetProcessor.getIndeces(instances)) {
-            //System.out.println(DatasetProcessor.getIndeces(instances));
             workNode.index = index;
             workNode.value = DatasetProcessor.getMedian(instances, index);
 
@@ -68,7 +69,6 @@ public class DTree implements Classifier {
                 Dataset rightSubnode = getSubset(workNode, instances, true);
                 Double currentGain = DatasetProcessor.getEntropy(leftSubnode)
                         + DatasetProcessor.getEntropy(rightSubnode);
-                //System.out.println(index + " : " + currentGain);
                 if (currentGain < minGain) {
                     minGain = currentGain;
                     minIndex = index;
@@ -77,24 +77,15 @@ public class DTree implements Classifier {
                 minIndex = index;
                 minGain = DatasetProcessor.getEntropy(getSubset(workNode, instances, false))
                         + DatasetProcessor.getEntropy(getSubset(workNode, instances, true));
-                //System.out.println(index + " : " + minGain);
             }
         }
 
         node.index = minIndex;
         node.classValue = DatasetProcessor.getDominantClass(instances);
         node.value = DatasetProcessor.getMedian(instances, node.index);
-        System.out.println(node.index + " : " + node.value);
-        System.out.println(node.value);
         Dataset leftSubnode = getSubset(workNode, instances, false);
         Dataset rightSubnode = getSubset(workNode, instances, true);
-        System.out.println(leftSubnode.size());
-        System.out.println(rightSubnode.size());
-//        System.out.println("-------------");
-//        for (Instance instance: instances) {
-//            System.out.println(instance.get(node.index));
-//        }
-//        System.out.println("-------------");
+
         node.left = createNode(leftSubnode, node.classValue);
         node.right = createNode(rightSubnode, node.classValue);
 
@@ -125,11 +116,6 @@ public class DTree implements Classifier {
                 dataset.add(instances.get(index));
             }
         }
-
-//        System.out.println("---");
-//        System.out.println(node.value);
-//        System.out.println(dataset.size());
-//        System.out.println(instances.size());
 
         return dataset;
     }
